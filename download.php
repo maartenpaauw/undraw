@@ -1,0 +1,37 @@
+<?php
+
+require 'vendor/autoload.php';
+
+use BladeComponents\Undraw\Api\IllustrationRequest;
+use BladeComponents\Undraw\Api\IllustrationResponse;
+use BladeComponents\Undraw\Api\IllustrationsRequest;
+use BladeComponents\Undraw\Api\IllustrationsResponse;
+use BladeComponents\Undraw\Api\UndrawClient;
+use BladeComponents\Undraw\Illustration;
+use GuzzleHttp\Client;
+
+$client = new Client();
+$undrawClient = new UndrawClient();
+$illustrationsRequest = new IllustrationsRequest($undrawClient);
+
+$hasMore = true;
+$page = 0;
+
+while ($hasMore) {
+    $illustrationsResponse = new IllustrationsResponse($illustrationsRequest->page($page));
+
+    $hasMore = $illustrationsResponse->hasMore();
+    $page = $illustrationsResponse->nextPage();
+
+    /** @var Illustration $illustration */
+    foreach ($illustrationsResponse->illustrations() as $illustration) {
+
+        $illustrationRequest = new IllustrationRequest($client);
+        $illustrationResponse = new IllustrationResponse($illustrationRequest->get($illustration->image));
+
+        $filename = sprintf('resources/views/components/%s.blade.php', $illustration->slug());
+        $svg = str_replace('fill="#6c63ff"', 'fill="{{ $color }}"', $illustrationResponse->svg());
+
+        file_put_contents($filename, $svg);
+    }
+}
