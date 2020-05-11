@@ -2,31 +2,22 @@
 
 namespace BladeComponents\Undraw\Components;
 
-use Illuminate\Support\Facades\View;
-use Illuminate\Support\Str;
-use Illuminate\View\Component;
-
-class UndrawComponent extends Component
+class UndrawComponent extends BaseComponent
 {
-    /**
-     * @var string
-     */
-    public $color;
-
     /**
      * @var string
      */
     private $illustration;
 
-    public function __construct(string $color = '#6C63FF', string $illustration = 'outdoor_party')
+    public function __construct(string $illustration, string $color = '#6C63FF')
     {
-        $this->color = $color;
+        parent::__construct($color);
+
         $this->illustration = $illustration;
     }
 
-    public function render()
+    protected function illustration(): string
     {
-        $snakeCased = Str::snake(Str::camel($this->illustration));
-        return View::make(sprintf('undraw::components.%s', $snakeCased));
+        return $this->illustration;
     }
 }

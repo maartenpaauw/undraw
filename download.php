@@ -7,7 +7,7 @@ use BladeComponents\Undraw\Api\IllustrationResponse;
 use BladeComponents\Undraw\Api\IllustrationsRequest;
 use BladeComponents\Undraw\Api\IllustrationsResponse;
 use BladeComponents\Undraw\Api\UndrawClient;
-use BladeComponents\Undraw\Illustration;
+use BladeComponents\Undraw\Api\Illustration;
 use GuzzleHttp\Client;
 
 $client = new Client();
@@ -29,7 +29,7 @@ while ($hasMore) {
         $illustrationRequest = new IllustrationRequest($client);
         $illustrationResponse = new IllustrationResponse($illustrationRequest->get($illustration->image));
 
-        $filename = sprintf('resources/views/components/%s.blade.php', $illustration->slug());
+        $filename = sprintf('resources/views/components/%s.blade.php', $illustration->snake());
         $svg = str_replace('fill="#6c63ff"', 'fill="{{ $color }}"', $illustrationResponse->svg());
 
         file_put_contents($filename, $svg);

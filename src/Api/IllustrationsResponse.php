@@ -2,7 +2,7 @@
 
 namespace BladeComponents\Undraw\Api;
 
-use BladeComponents\Undraw\Illustration;
+use BladeComponents\Undraw\Api\Illustration;
 use Psr\Http\Message\ResponseInterface;
 
 class IllustrationsResponse

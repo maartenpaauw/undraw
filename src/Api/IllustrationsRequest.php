@@ -2,7 +2,7 @@
 
 namespace BladeComponents\Undraw\Api;
 
-use BladeComponents\Undraw\Illustration;
+use GuzzleHttp\ClientInterface;
 use Psr\Http\Message\ResponseInterface;
 
 class IllustrationsRequest
@@ -10,16 +10,16 @@ class IllustrationsRequest
     /**
      * @var UndrawClient
      */
-    private $undrawClient;
+    private $client;
 
-    public function __construct(UndrawClient $undrawClient)
+    public function __construct(ClientInterface $client)
     {
-        $this->undrawClient = $undrawClient;
+        $this->client = $client;
     }
 
     public function page(int $page = 0): ResponseInterface
     {
-        return $this->undrawClient->get('illustrations', [
+        return $this->client->get('illustrations', [
             'query' => [
                 'page' => $page,
             ]
