@@ -8,7 +8,7 @@ use Psr\Http\Message\ResponseInterface;
 class IllustrationsRequest
 {
     /**
-     * @var UndrawClient
+     * @var ClientInterface
      */
     private $client;
 

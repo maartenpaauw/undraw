@@ -2,14 +2,13 @@
 
 namespace BladeComponents\Undraw\Api;
 
-use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
 use Psr\Http\Message\ResponseInterface;
 
 class IllustrationRequest
 {
     /**
-     * @var Client
+     * @var ClientInterface
      */
     private $client;
 
