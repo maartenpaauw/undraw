@@ -21,7 +21,7 @@ class UndrawServiceProvider extends ServiceProvider
         Blade::component(UndrawComponent::class, 'undraw');
 
         Blade::components([
-            HERE
+            DummyComponentList
         ]);
     }
 }

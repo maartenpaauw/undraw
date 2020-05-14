@@ -18,16 +18,16 @@ class BaseComponent extends Component
         $this->color = $color;
     }
 
-    protected function illustration(): string
+    protected function illustrationName(): string
     {
         $calledComponent = Str::afterLast(get_called_class(), '\\');
-        $illustration = str_replace(['Undraw', 'Component'], '', $calledComponent);
+        $illustration = str_replace(['Undraw', 'Component'], null, $calledComponent);
 
         return Str::snake($illustration);
     }
 
     public function render()
     {
-        return View::make(sprintf('undraw::components.%s', $this->illustration()));
+        return View::make(sprintf('undraw::components.%s', $this->illustrationName()));
     }
 }

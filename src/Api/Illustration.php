@@ -22,6 +22,11 @@ class Illustration
         $this->image = $image;
     }
 
+    public function slug(): string
+    {
+        return Str::slug($this->studly());
+    }
+
     public function snake(): string
     {
         return Str::snake($this->title);

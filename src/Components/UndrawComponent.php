@@ -16,7 +16,7 @@ class UndrawComponent extends BaseComponent
         $this->illustration = $illustration;
     }
 
-    protected function illustration(): string
+    protected function illustrationName(): string
     {
         return $this->illustration;
     }

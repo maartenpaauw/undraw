@@ -25,13 +25,13 @@ while ($hasMore) {
     foreach ($illustrationsResponse->illustrations() as $illustration) {
         $className = sprintf('\BladeComponents\Undraw\Components\Illustrations\Undraw%sComponent::class', $illustration->studly());
 
-        $componentList[] = sprintf('%s => \'%s\'', $className, $illustration->snake());
+        $componentList[] = sprintf("%s => '%s'", $className, $illustration->slug());
     }
 }
 
 sort($componentList);
 
 $dummyServiceProvider = file_get_contents('stubs/UndrawServiceProvider.stub');
-$content = str_replace('HERE', implode(',' . PHP_EOL . '            ', $componentList).',', $dummyServiceProvider);
+$content = str_replace('DummyComponentList', implode(',' . PHP_EOL . '            ', $componentList).',', $dummyServiceProvider);
 
 file_put_contents('src/Providers/UndrawServiceProvider.php', $content);
