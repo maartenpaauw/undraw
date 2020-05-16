@@ -39,7 +39,7 @@
     },
     "scripts": {
         "download": "@php download.php",
-        "generate-enum": "@php generate-classes.php",
+        "generate-classes": "@php generate-classes.php",
         "generate-service-provider": "@php generate-service-provider.php",
         "test": "vendor/bin/phpunit",
         "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
