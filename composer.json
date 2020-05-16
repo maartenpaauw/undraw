@@ -24,6 +24,7 @@
         "illuminate/view": "v7.10.3"
     },
     "require-dev": {
+        "orchestra/testbench": "^5.2",
         "phpunit/phpunit": "8.5.4"
     },
     "autoload": {

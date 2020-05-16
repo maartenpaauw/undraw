@@ -24,7 +24,7 @@ class Illustration
 
     public function slug(): string
     {
-        return Str::slug($this->studly());
+        return Str::slug($this->title);
     }
 
     public function snake(): string
