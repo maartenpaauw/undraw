@@ -1,12 +1,13 @@
 {
     "name": "maartenpaauw/undraw",
     "description": "Laravel Blade components for Undraw illustrations",
+    "license": "MIT",
     "keywords": [
         "blade-components",
         "laravel-components",
         "undraw",
         "undraw-illustrations",
-        "undraw=components"
+        "undraw-components"
     ],
     "homepage": "https://github.com/maartenpaauw/undraw",
     "type": "library",
@@ -20,13 +21,14 @@
     "require": {
         "php": "^7.2.5",
         "guzzlehttp/guzzle": "^6.5",
-        "illuminate/support": "v7.10.3",
-        "illuminate/view": "v7.10.3"
+        "illuminate/support": "^7.12",
+        "illuminate/view": "^7.12"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^2.16",
+        "mockery/mockery": "~1.3.1",
         "orchestra/testbench": "^5.2",
-        "phpunit/phpunit": "8.5.4"
+        "phpunit/phpunit": "^8.5"
     },
     "autoload": {
         "psr-4": {
