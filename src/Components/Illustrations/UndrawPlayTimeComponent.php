@@ -4,4 +4,6 @@ namespace BladeComponents\Undraw\Components\Illustrations;
 
 use BladeComponents\Undraw\Components\BaseComponent;
 
-class UndrawPlayTimeComponent extends BaseComponent {}
+class UndrawPlayTimeComponent extends BaseComponent
+{
+}

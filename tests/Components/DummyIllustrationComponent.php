@@ -10,5 +10,4 @@ class DummyIllustrationComponent extends BaseComponent
     {
         return parent::illustrationName();
     }
-
 }

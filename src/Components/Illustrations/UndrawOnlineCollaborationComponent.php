@@ -4,4 +4,6 @@ namespace BladeComponents\Undraw\Components\Illustrations;
 
 use BladeComponents\Undraw\Components\BaseComponent;
 
-class UndrawOnlineCollaborationComponent extends BaseComponent {}
+class UndrawOnlineCollaborationComponent extends BaseComponent
+{
+}

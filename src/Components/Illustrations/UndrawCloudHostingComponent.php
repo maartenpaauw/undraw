@@ -4,4 +4,6 @@ namespace BladeComponents\Undraw\Components\Illustrations;
 
 use BladeComponents\Undraw\Components\BaseComponent;
 
-class UndrawCloudHostingComponent extends BaseComponent {}
+class UndrawCloudHostingComponent extends BaseComponent
+{
+}

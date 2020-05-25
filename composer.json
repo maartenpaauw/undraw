@@ -1,5 +1,5 @@
 {
-    "name": "blade-components/undraw",
+    "name": "maartenpaauw/undraw",
     "description": "Laravel Blade components for Undraw illustrations",
     "keywords": [
         "blade-components",
@@ -8,7 +8,7 @@
         "undraw-illustrations",
         "undraw=components"
     ],
-    "homepage": "https://github.com/blade-components/undraw",
+    "homepage": "https://github.com/maartenpaauw/undraw",
     "type": "library",
     "authors": [
         {
@@ -24,6 +24,7 @@
         "illuminate/view": "v7.10.3"
     },
     "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.16",
         "orchestra/testbench": "^5.2",
         "phpunit/phpunit": "8.5.4"
     },
@@ -39,6 +40,7 @@
     },
     "scripts": {
         "download": "@php download.php",
+        "fix": "vendor/bin/php-cs-fixer fix .",
         "generate-classes": "@php generate-classes.php",
         "generate-service-provider": "@php generate-service-provider.php",
         "test": "vendor/bin/phpunit",

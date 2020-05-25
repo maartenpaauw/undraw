@@ -4,4 +4,6 @@ namespace BladeComponents\Undraw\Components\Illustrations;
 
 use BladeComponents\Undraw\Components\BaseComponent;
 
-class UndrawFingerprintComponent extends BaseComponent {}
+class UndrawFingerprintComponent extends BaseComponent
+{
+}

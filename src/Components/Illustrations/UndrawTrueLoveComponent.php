@@ -4,4 +4,6 @@ namespace BladeComponents\Undraw\Components\Illustrations;
 
 use BladeComponents\Undraw\Components\BaseComponent;
 
-class UndrawTrueLoveComponent extends BaseComponent {}
+class UndrawTrueLoveComponent extends BaseComponent
+{
+}

@@ -4,4 +4,6 @@ namespace BladeComponents\Undraw\Components\Illustrations;
 
 use BladeComponents\Undraw\Components\BaseComponent;
 
-class UndrawOnlineDatingComponent extends BaseComponent {}
+class UndrawOnlineDatingComponent extends BaseComponent
+{
+}

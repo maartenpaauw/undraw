@@ -4,4 +4,6 @@ namespace BladeComponents\Undraw\Components\Illustrations;
 
 use BladeComponents\Undraw\Components\BaseComponent;
 
-class UndrawRegainFocusComponent extends BaseComponent {}
+class UndrawRegainFocusComponent extends BaseComponent
+{
+}

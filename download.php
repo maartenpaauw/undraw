@@ -25,7 +25,6 @@ while ($hasMore) {
 
     /** @var Illustration $illustration */
     foreach ($illustrationsResponse->illustrations() as $illustration) {
-
         $illustrationRequest = new IllustrationRequest($client);
         $illustrationResponse = new IllustrationResponse($illustrationRequest->get($illustration->image));
 

@@ -2,4 +2,5 @@ vendor/
 .idea/
 build/
 
+.php_cs.cache
 .phpunit.result.cache
