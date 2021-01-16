@@ -2,7 +2,6 @@
 
 namespace BladeComponents\Undraw\Api;
 
-use BladeComponents\Undraw\Api\Illustration;
 use Psr\Http\Message\ResponseInterface;
 
 class IllustrationsResponse
@@ -30,7 +29,7 @@ class IllustrationsResponse
             return [];
         }
 
-        $illustrationList = $this->contents['illustrations'];
+        $illustrationList = $this->contents['illos'];
 
         if (!$illustrationList) {
             return [];

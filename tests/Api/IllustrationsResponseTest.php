@@ -85,7 +85,7 @@ class IllustrationsResponseTest extends TestCase
     public function it_returns_an_empty_array_when_there_are_no_illustrations(): void
     {
         // Arrange
-        $response = new Response(200, [], json_encode(['illustrations' => null]));
+        $response = new Response(200, [], json_encode(['illos' => null]));
         $illustrationsResponse = new IllustrationsResponse($response);
 
         // Act
@@ -99,7 +99,7 @@ class IllustrationsResponseTest extends TestCase
     public function it_returns_a_list_of_illustrations(): void
     {
         // Arrange
-        $content = ['illustrations' => [
+        $content = ['illos' => [
             [
                 'title' => 'A',
                 'image' => 'https://example.com/a.svg',
