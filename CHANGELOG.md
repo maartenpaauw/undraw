@@ -2,6 +2,12 @@
 
 All notable changes to `undraw` will be documented in this file
 
+## 2.1.1 - 2023-03-19
+
+### Fixed
+
+- Accept slugged illustration names.
+
 ## 2.1.0 - 2023-03-19
 
 ### Added

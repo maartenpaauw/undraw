@@ -2,12 +2,11 @@
 
 namespace BladeComponents\Undraw\Components;
 
+use Illuminate\Support\Str;
+
 final class UndrawComponent extends BaseComponent
 {
-    /**
-     * @var string
-     */
-    private $illustration;
+    private string $illustration;
 
     public function __construct(string $illustration, string $color = '#6C63FF')
     {
@@ -18,6 +17,6 @@ final class UndrawComponent extends BaseComponent
 
     protected function illustrationName(): string
     {
-        return $this->illustration;
+        return Str::slug($this->illustration, '_');
     }
 }
