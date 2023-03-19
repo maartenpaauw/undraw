@@ -1,12 +1,14 @@
 <?php
 
+declare(strict_types=1);
+
 namespace BladeComponents\Undraw\Providers;
 
 use BladeComponents\Undraw\Components\UndrawComponent;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
 
-class UndrawServiceProvider extends ServiceProvider
+final class UndrawServiceProvider extends ServiceProvider
 {
     public function boot(): void
     {

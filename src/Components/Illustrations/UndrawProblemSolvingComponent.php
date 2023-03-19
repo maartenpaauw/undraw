@@ -1,9 +1,11 @@
 <?php
 
+declare(strict_types=1);
+
 namespace BladeComponents\Undraw\Components\Illustrations;
 
 use BladeComponents\Undraw\Components\BaseComponent;
 
-class UndrawProblemSolvingComponent extends BaseComponent
+final class UndrawProblemSolvingComponent extends BaseComponent
 {
 }

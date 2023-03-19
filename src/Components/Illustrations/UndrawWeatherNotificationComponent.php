@@ -1,9 +1,11 @@
 <?php
 
+declare(strict_types=1);
+
 namespace BladeComponents\Undraw\Components\Illustrations;
 
 use BladeComponents\Undraw\Components\BaseComponent;
 
-class UndrawWeatherNotificationComponent extends BaseComponent
+final class UndrawWeatherNotificationComponent extends BaseComponent
 {
 }

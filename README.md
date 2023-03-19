@@ -40,6 +40,22 @@ The primary color can be changed as well;
 composer test
 ```
 
+### Development
+
+Generate the illustration components with:
+
+```bash
+composer download
+```
+
+```bash
+composer generate-classes
+```
+
+```bash
+composer generate-service-provider
+```
+
 ### Changelog
 
 Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.
