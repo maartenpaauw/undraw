@@ -10,10 +10,7 @@ use Illuminate\View\Component;
 
 abstract class BaseComponent extends Component
 {
-    /**
-     * @var string
-     */
-    public $color;
+    public string $color;
 
     public function __construct(string $color = '#6C63FF')
     {

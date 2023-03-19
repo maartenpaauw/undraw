@@ -30,7 +30,12 @@ final class IllustrationsResponseTest extends TestCase
     public function it_should_return_zero_for_next_page_when_the_status_code_is_not_200(): void
     {
         // Arrange
-        $response = new Response(422);
+        $response = new Response(422, body: json_encode([
+            'illos' => [],
+            'hasMore' => true,
+            'nextPage' => 1,
+        ]));
+
         $illustrationsResponse = new IllustrationsResponse($response);
         $expectedNextPage = 0;
 
@@ -45,7 +50,7 @@ final class IllustrationsResponseTest extends TestCase
     public function it_should_return_true_when_there_are_more_pages(): void
     {
         // Arrange
-        $response = new Response(200, [], json_encode(['hasMore' => true]));
+        $response = new Response(200, body: json_encode(['hasMore' => true]));
         $illustrationsResponse = new IllustrationsResponse($response);
 
         // Act
@@ -59,7 +64,12 @@ final class IllustrationsResponseTest extends TestCase
     public function it_should_return_false_for_has_more_when_the_status_code_is_not_200(): void
     {
         // Arrange
-        $response = new Response(422);
+        $response = new Response(422, body: json_encode([
+            'illos' => [],
+            'hasMore' => true,
+            'nextPage' => 1,
+        ]));
+
         $illustrationsResponse = new IllustrationsResponse($response);
 
         // Act
@@ -73,7 +83,12 @@ final class IllustrationsResponseTest extends TestCase
     public function it_returns_an_empty_array_when_the_status_code_is_not_200(): void
     {
         // Arrange
-        $response = new Response(422);
+        $response = new Response(422, body: json_encode([
+            'illos' => [],
+            'hasMore' => true,
+            'nextPage' => 1,
+        ]));
+
         $illustrationsResponse = new IllustrationsResponse($response);
 
         // Act
@@ -87,7 +102,7 @@ final class IllustrationsResponseTest extends TestCase
     public function it_returns_an_empty_array_when_there_are_no_illustrations(): void
     {
         // Arrange
-        $response = new Response(200, [], json_encode(['illos' => null]));
+        $response = new Response(200, body: json_encode(['illos' => null]));
         $illustrationsResponse = new IllustrationsResponse($response);
 
         // Act
@@ -101,18 +116,20 @@ final class IllustrationsResponseTest extends TestCase
     public function it_returns_a_list_of_illustrations(): void
     {
         // Arrange
-        $content = ['illos' => [
-            [
-                'title' => 'A',
-                'image' => 'https://example.com/a.svg',
+        $content = [
+            'illos' => [
+                [
+                    'title' => 'A',
+                    'image' => 'https://example.com/a.svg',
+                ],
+                [
+                    'title' => 'B',
+                    'image' => 'https://example.com/b.svg',
+                ],
             ],
-            [
-                'title' => 'B',
-                'image' => 'https://example.com/b.svg',
-            ],
-        ]];
+        ];
 
-        $response = new Response(200, [], json_encode($content));
+        $response = new Response(200, body: json_encode($content));
         $illustrationsResponse = new IllustrationsResponse($response);
 
         // Act

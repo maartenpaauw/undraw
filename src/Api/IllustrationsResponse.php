@@ -12,14 +12,11 @@ use Psr\Http\Message\ResponseInterface;
 final class IllustrationsResponse
 {
     /**
-     * @var array
+     * @var array<string, mixed>
      */
-    private $contents;
+    private array $contents;
 
-    /**
-     * @var ResponseInterface
-     */
-    private $response;
+    private ResponseInterface $response;
 
     public function __construct(ResponseInterface $response)
     {
@@ -27,6 +24,9 @@ final class IllustrationsResponse
         $this->contents = json_decode($response->getBody()->getContents(), true);
     }
 
+    /**
+     * @return array<array-key, Illustration>
+     */
     public function illustrations(): array
     {
         if ($this->response->getStatusCode() !== 200) {

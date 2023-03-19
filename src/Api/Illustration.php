@@ -11,15 +11,9 @@ use Illuminate\Support\Str;
  */
 final class Illustration
 {
-    /**
-     * @var string
-     */
-    public $title;
+    public string $title;
 
-    /**
-     * @var string
-     */
-    public $image;
+    public string $image;
 
     public function __construct(string $title, string $image)
     {

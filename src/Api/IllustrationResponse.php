@@ -11,10 +11,7 @@ use Psr\Http\Message\ResponseInterface;
  */
 final class IllustrationResponse
 {
-    /**
-     * @var ResponseInterface
-     */
-    private $response;
+    private ResponseInterface $response;
 
     public function __construct(ResponseInterface $response)
     {

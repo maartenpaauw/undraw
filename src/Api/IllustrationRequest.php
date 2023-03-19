@@ -12,10 +12,7 @@ use Psr\Http\Message\ResponseInterface;
  */
 final class IllustrationRequest
 {
-    /**
-     * @var ClientInterface
-     */
-    private $client;
+    private ClientInterface $client;
 
     public function __construct(ClientInterface $client)
     {
