@@ -2,6 +2,13 @@
 
 All notable changes to `undraw` will be documented in this file
 
+## 2.1.0 - 2023-03-19
+
+### Added
+
+- Support for Laravel 10.
+- New Undraw.co illustrations.
+
 ## 2.0.0 - 2022-02-14
 
 ### Added
