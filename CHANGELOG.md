@@ -9,6 +9,10 @@ All notable changes to `undraw` will be documented in this file
 - Support for Laravel 10.
 - New Undraw.co illustrations.
 
+### Removed
+
+- Support for PHP 7.4.
+
 ## 2.0.0 - 2022-02-14
 
 ### Added
