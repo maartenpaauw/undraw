@@ -39,13 +39,9 @@ final class IllustrationsResponse
             return [];
         }
 
-        $illustrations = [];
-
-        foreach ($illustrationList as $illustration) {
-            $illustrations[] = new Illustration($illustration['title'], $illustration['image']);
-        }
-
-        return $illustrations;
+        return array_map(static function (array $illustration): Illustration {
+            return new Illustration($illustration['title'], $illustration['image']);
+        }, $illustrationList);
     }
 
     public function hasMore(): bool
