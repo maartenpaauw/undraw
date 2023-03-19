@@ -7,6 +7,9 @@ namespace BladeComponents\Undraw\Api;
 use GuzzleHttp\ClientInterface;
 use Psr\Http\Message\ResponseInterface;
 
+/**
+ * @internal
+ */
 final class IllustrationsRequest
 {
     /**

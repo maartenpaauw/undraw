@@ -6,9 +6,11 @@ namespace BladeComponents\Undraw\Api;
 
 use Psr\Http\Message\ResponseInterface;
 
+/**
+ * @internal
+ */
 final class IllustrationsResponse
 {
-
     /**
      * @var array
      */

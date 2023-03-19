@@ -6,6 +6,9 @@ namespace BladeComponents\Undraw\Api;
 
 use GuzzleHttp\Client;
 
+/**
+ * @internal
+ */
 final class UndrawClient extends Client
 {
     public function __construct()

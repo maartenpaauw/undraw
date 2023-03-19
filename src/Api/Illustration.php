@@ -6,6 +6,9 @@ namespace BladeComponents\Undraw\Api;
 
 use Illuminate\Support\Str;
 
+/**
+ * @internal
+ */
 final class Illustration
 {
     /**
