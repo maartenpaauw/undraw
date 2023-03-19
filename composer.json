@@ -23,8 +23,8 @@
         "illuminate/view": "^8.0|^9.0|^10.0"
     },
     "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.9",
         "guzzlehttp/guzzle": "^6.5|^7.0",
-        "friendsofphp/php-cs-fixer": "^2.16",
         "orchestra/testbench": "^6.24|^7.0",
         "phpunit/phpunit": "^8.5"
     },
@@ -40,7 +40,7 @@
     },
     "scripts": {
         "download": "@php download.php",
-        "fix": "vendor/bin/php-cs-fixer fix .",
+        "fix": "PHP_CS_FIXER_IGNORE_ENV=1 vendor/bin/php-cs-fixer fix .",
         "generate-classes": "@php generate-classes.php",
         "generate-service-provider": "@php generate-service-provider.php",
         "test": "vendor/bin/phpunit",
