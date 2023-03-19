@@ -1,11 +1,13 @@
 <?php
 
+declare(strict_types=1);
+
 namespace BladeComponents\Undraw\Tests\Api;
 
 use BladeComponents\Undraw\Api\Illustration;
 use BladeComponents\Undraw\Tests\TestCase;
 
-class IllustrationTest extends TestCase
+final class IllustrationTest extends TestCase
 {
     /**
      * @test

@@ -1,11 +1,13 @@
 <?php
 
+declare(strict_types=1);
+
 namespace BladeComponents\Undraw\Api;
 
 use GuzzleHttp\ClientInterface;
 use Psr\Http\Message\ResponseInterface;
 
-class IllustrationRequest
+final class IllustrationRequest
 {
     /**
      * @var ClientInterface

@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace BladeComponents\Undraw\Tests\Api;
 
 use BladeComponents\Undraw\Api\Illustration;
@@ -7,7 +9,7 @@ use BladeComponents\Undraw\Api\IllustrationsResponse;
 use BladeComponents\Undraw\Tests\TestCase;
 use GuzzleHttp\Psr7\Response;
 
-class IllustrationsResponseTest extends TestCase
+final class IllustrationsResponseTest extends TestCase
 {
     /** @test */
     public function it_should_return_the_next_page_correctly(): void

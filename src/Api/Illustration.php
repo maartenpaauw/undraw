@@ -1,10 +1,12 @@
 <?php
 
+declare(strict_types=1);
+
 namespace BladeComponents\Undraw\Api;
 
 use Illuminate\Support\Str;
 
-class Illustration
+final class Illustration
 {
     /**
      * @var string

@@ -1,10 +1,12 @@
 <?php
 
+declare(strict_types=1);
+
 namespace BladeComponents\Undraw\Tests\Components;
 
 use BladeComponents\Undraw\Components\BaseComponent;
 
-class DummyIllustrationComponent extends BaseComponent
+final class DummyIllustrationComponent extends BaseComponent
 {
     public function illustrationName(): string
     {

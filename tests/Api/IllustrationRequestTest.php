@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace BladeComponents\Undraw\Tests\Api;
 
 use BladeComponents\Undraw\Api\IllustrationRequest;
@@ -10,7 +12,7 @@ use GuzzleHttp\HandlerStack;
 use GuzzleHttp\Psr7\Response;
 use Psr\Http\Message\ResponseInterface;
 
-class IllustrationRequestTest extends TestCase
+final class IllustrationRequestTest extends TestCase
 {
     /** @test */
     public function it_should_return_an_illustration_response_correctly(): void

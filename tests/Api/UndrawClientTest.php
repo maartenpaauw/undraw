@@ -1,12 +1,14 @@
 <?php
 
+declare(strict_types=1);
+
 namespace BladeComponents\Undraw\Tests\Api;
 
 use BladeComponents\Undraw\Api\UndrawClient;
 use BladeComponents\Undraw\Tests\TestCase;
 use GuzzleHttp\Psr7\Uri;
 
-class UndrawClientTest extends TestCase
+final class UndrawClientTest extends TestCase
 {
     /** @test */
     public function it_should_set_the_base_uri_correctly(): void

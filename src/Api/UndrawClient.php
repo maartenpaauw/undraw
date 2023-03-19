@@ -1,10 +1,12 @@
 <?php
 
+declare(strict_types=1);
+
 namespace BladeComponents\Undraw\Api;
 
 use GuzzleHttp\Client;
 
-class UndrawClient extends Client
+final class UndrawClient extends Client
 {
     public function __construct()
     {

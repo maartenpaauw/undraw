@@ -2,7 +2,7 @@
 
 namespace BladeComponents\Undraw\Components;
 
-class UndrawComponent extends BaseComponent
+final class UndrawComponent extends BaseComponent
 {
     /**
      * @var string

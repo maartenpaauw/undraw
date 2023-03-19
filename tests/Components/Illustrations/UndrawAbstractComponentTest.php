@@ -1,11 +1,13 @@
 <?php
 
+declare(strict_types=1);
+
 namespace BladeComponents\Undraw\Tests\Components\Illustrations;
 
 use BladeComponents\Undraw\Components\Illustrations\UndrawAbstractComponent;
 use BladeComponents\Undraw\Tests\TestCase;
 
-class UndrawAbstractComponentTest extends TestCase
+final class UndrawAbstractComponentTest extends TestCase
 {
     /** @test */
     public function it_has_a_color_by_default(): void

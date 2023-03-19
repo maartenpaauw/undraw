@@ -1,10 +1,12 @@
 <?php
 
+declare(strict_types=1);
+
 namespace BladeComponents\Undraw\Api;
 
 use Psr\Http\Message\ResponseInterface;
 
-class IllustrationsResponse
+final class IllustrationsResponse
 {
 
     /**

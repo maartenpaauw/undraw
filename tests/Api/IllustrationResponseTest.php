@@ -1,12 +1,14 @@
 <?php
 
+declare(strict_types=1);
+
 namespace BladeComponents\Undraw\Tests\Api;
 
 use BladeComponents\Undraw\Api\IllustrationResponse;
 use BladeComponents\Undraw\Tests\TestCase;
 use GuzzleHttp\Psr7\Response;
 
-class IllustrationResponseTest extends TestCase
+final class IllustrationResponseTest extends TestCase
 {
     /** @test */
     public function it_should_receive_the_response_content_correctly(): void

@@ -1,12 +1,14 @@
 <?php
 
+declare(strict_types=1);
+
 namespace BladeComponents\Undraw\Components;
 
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\Str;
 use Illuminate\View\Component;
 
-class BaseComponent extends Component
+abstract class BaseComponent extends Component
 {
     /**
      * @var string
@@ -21,7 +23,7 @@ class BaseComponent extends Component
     protected function illustrationName(): string
     {
         $calledComponent = Str::afterLast(get_called_class(), '\\');
-        $illustration = str_replace(['Undraw', 'Component'], null, $calledComponent);
+        $illustration = str_replace(['Undraw', 'Component'], '', $calledComponent);
 
         return Str::snake($illustration);
     }
