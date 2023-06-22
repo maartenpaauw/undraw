@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace BladeComponents\Undraw\Components;
 
 use Illuminate\Support\Str;
