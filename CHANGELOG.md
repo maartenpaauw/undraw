@@ -11,7 +11,8 @@ All notable changes to `undraw` will be documented in this file
 
 ### Removed
 
-- Old Undraw.co illutrations.
+- Unnecessary files from release with `.gitattributes`.
+- Old Undraw.co illustrations.
 
 ## 2.1.1 - 2023-03-19
 
