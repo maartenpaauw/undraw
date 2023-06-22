@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="930.724" height="613.071" viewBox="0 0 930.724 613.071">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 930.724 613.071">
   <g id="Group_19" data-name="Group 19" transform="translate(-125.881 -143.464)">
     <ellipse id="Ellipse_44" data-name="Ellipse 44" cx="108.283" cy="108.283" rx="108.283" ry="108.283" transform="translate(192.114 538.103)" fill="#e6e6e6"/>
     <ellipse id="Ellipse_45" data-name="Ellipse 45" cx="108.283" cy="108.283" rx="108.283" ry="108.283" transform="translate(383.434 151.324)" fill="{{ $color }}"/>

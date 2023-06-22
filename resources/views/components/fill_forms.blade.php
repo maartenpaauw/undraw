@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="856.385" height="559.94" viewBox="0 0 856.385 559.94">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 856.385 559.94">
   <g id="Group_47" data-name="Group 47" transform="translate(-171.808 -222.403)">
     <g id="Group_43" data-name="Group 43" transform="translate(-222.485 -67.725)">
       <rect id="Rectangle_113" data-name="Rectangle 113" width="94.644" height="1.803" transform="translate(805.32 327.084)" fill="#ccc"/>

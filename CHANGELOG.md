@@ -2,6 +2,17 @@
 
 All notable changes to `undraw` will be documented in this file
 
+## Unreleased
+
+### Added
+
+- Remove fixed width and height attributes.
+- New Undraw.co illustrations.
+
+### Removed
+
+- Old Undraw.co illutrations.
+
 ## 2.1.1 - 2023-03-19
 
 ### Fixed

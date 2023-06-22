@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="681" height="686.689" viewBox="0 0 681 686.689">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 681 686.689">
   <g id="Group_25" data-name="Group 25" transform="translate(-228 -105)">
     <ellipse id="Ellipse_92" data-name="Ellipse 92" cx="340.5" cy="20" rx="340.5" ry="20" transform="translate(228 751.689)" fill="#e6e6e6"/>
     <path id="Path_607" data-name="Path 607" d="M614,263.086h-3.663V162.735a58.08,58.08,0,0,0-58.08-58.08H339.651a58.08,58.08,0,0,0-58.08,58.08V713.265a58.08,58.08,0,0,0,58.08,58.08H552.257a58.08,58.08,0,0,0,58.08-58.08V334.517H614Z" transform="translate(0 0.345)" fill="#3f3d56"/>

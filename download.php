@@ -30,6 +30,8 @@ while ($hasMore) {
 
         $filename = sprintf('resources/views/components/%s.blade.php', $illustration->snake());
         $svg = str_replace('fill="#6c63ff"', 'fill="{{ $color }}"', $illustrationResponse->svg());
+        $svg = preg_replace('/width="\d+(.\d+)?"\s/', '', $svg, 1);
+        $svg = preg_replace('/height="\d+(.\d+)?"\s/', '', $svg, 1);
 
         file_put_contents($filename, $svg);
     }

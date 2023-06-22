@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="733.82" height="503.768" viewBox="0 0 733.82 503.768">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 733.82 503.768">
   <g id="Group_16" data-name="Group 16" transform="translate(-196.555 -165.086)">
     <path id="Path_204" data-name="Path 204" d="M261.846,378.459a45.126,45.126,0,1,1,0-90.252H672.56a45.126,45.126,0,1,1,0,90.252Z" transform="translate(-20.165 -123.12)" fill="#e6e6e6"/>
     <path id="Path_205" data-name="Path 205" d="M264.96,297.207a39.24,39.24,0,0,0,0,78.48H675.674a39.24,39.24,0,1,0,0-78.48Z" transform="translate(-23.279 -126.234)" fill="#fff"/>
