@@ -2,6 +2,21 @@
 
 All notable changes to `undraw` will be documented in this file
 
+## Unreleased
+
+### Added
+
+- New Undraw.co illustrations.
+
+### Removed
+
+- Old Undraw.co illustrations.
+
+### Fixed
+
+- Skip illustrations which cannot be fetched.
+- Remove XML tags.
+
 ## 3.0.0 - 2023-06-23
 
 ### Added
