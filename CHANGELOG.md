@@ -2,15 +2,11 @@
 
 All notable changes to `undraw` will be documented in this file
 
-## Unreleased
+## 3.1.0 - 2023-07-13
 
 ### Added
 
 - New Undraw.co illustrations.
-
-### Removed
-
-- Old Undraw.co illustrations.
 
 ### Fixed
 
