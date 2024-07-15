@@ -6,6 +6,6 @@ namespace BladeComponents\Undraw\Components\Illustrations;
 
 use BladeComponents\Undraw\Components\BaseComponent;
 
-final class UndrawBackToSchoolComponent extends BaseComponent
+final class UndrawCompletionProgressComponent extends BaseComponent
 {
 }
