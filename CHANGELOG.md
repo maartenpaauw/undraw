@@ -2,6 +2,12 @@
 
 All notable changes to `undraw` will be documented in this file
 
+## 4.1.0 - 2024-07-15
+
+### Added
+
+- New Undraw.co illustrations.
+
 ## 4.0.0 - 2024-07-15
 
 ### Added
