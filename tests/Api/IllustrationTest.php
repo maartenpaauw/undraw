@@ -28,7 +28,7 @@ final class IllustrationTest extends TestCase
         $this->assertSame($expectedSlug, $slug);
     }
 
-    public function slugDataProvider(): array
+    public static function slugDataProvider(): array
     {
         return [
             ['3d modeling', '3d-modeling'],
@@ -56,7 +56,7 @@ final class IllustrationTest extends TestCase
         $this->assertSame($expectedSnake, $snake);
     }
 
-    public function snakeDataProvider(): array
+    public static function snakeDataProvider(): array
     {
         return [
             ['3d modeling', '3d_modeling'],
@@ -84,7 +84,7 @@ final class IllustrationTest extends TestCase
         $this->assertSame($expectedStudly, $studly);
     }
 
-    public function studlyDataProvider(): array
+    public static function studlyDataProvider(): array
     {
         return [
             ['3d modeling', '3dModeling'],
