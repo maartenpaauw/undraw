@@ -2,6 +2,18 @@
 
 All notable changes to `undraw` will be documented in this file
 
+## 4.0.0 - 2024-07-15
+
+### Added
+
+- Support for Laravel 11.
+- Support for PHP 8.3.
+
+### Removed
+
+- Support for Laravel 8 and 9.
+- Support for PHP 8.0.
+
 ## 3.1.0 - 2023-07-13
 
 ### Added
