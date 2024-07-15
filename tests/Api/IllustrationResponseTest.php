@@ -7,10 +7,11 @@ namespace BladeComponents\Undraw\Tests\Api;
 use BladeComponents\Undraw\Api\IllustrationResponse;
 use BladeComponents\Undraw\Tests\TestCase;
 use GuzzleHttp\Psr7\Response;
+use PHPUnit\Framework\Attributes\Test;
 
 final class IllustrationResponseTest extends TestCase
 {
-    /** @test */
+    #[Test]
     public function it_should_receive_the_response_content_correctly(): void
     {
         // Arrange

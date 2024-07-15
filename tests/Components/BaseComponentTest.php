@@ -6,10 +6,11 @@ namespace BladeComponents\Undraw\Tests\Components;
 
 use BladeComponents\Undraw\Components\UndrawComponent;
 use BladeComponents\Undraw\Tests\TestCase;
+use PHPUnit\Framework\Attributes\Test;
 
 final class BaseComponentTest extends TestCase
 {
-    /** @test */
+    #[Test]
     public function it_has_a_color_by_default(): void
     {
         // Arrange
@@ -24,7 +25,7 @@ final class BaseComponentTest extends TestCase
         $this->assertSame($expectedColor, $color);
     }
 
-    /** @test */
+    #[Test]
     public function it_can_change_the_color(): void
     {
         // Arrange
@@ -39,7 +40,7 @@ final class BaseComponentTest extends TestCase
         $this->assertSame($expectedColor, $color);
     }
 
-    /** @test */
+    #[Test]
     public function it_should_generate_the_view_name_correctly(): void
     {
         // Arrange
@@ -53,7 +54,7 @@ final class BaseComponentTest extends TestCase
         $this->assertSame($expectedViewName, $name);
     }
 
-    /** @test */
+    #[Test]
     public function it_should_generate_the_view_name_correctly_when_using_different_separators(): void
     {
         // Arrange
@@ -65,7 +66,7 @@ final class BaseComponentTest extends TestCase
         $this->assertSame($expectedViewName, (new UndrawComponent('3d modeling'))->render()->name());
     }
 
-    /** @test */
+    #[Test]
     public function it_should_generate_the_illustration_name_based_on_the_class_name(): void
     {
         // Arrange

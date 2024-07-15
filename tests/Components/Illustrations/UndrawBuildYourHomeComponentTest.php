@@ -6,10 +6,11 @@ namespace BladeComponents\Undraw\Tests\Components\Illustrations;
 
 use BladeComponents\Undraw\Components\Illustrations\UndrawBuildYourHomeComponent;
 use BladeComponents\Undraw\Tests\TestCase;
+use PHPUnit\Framework\Attributes\Test;
 
 final class UndrawBuildYourHomeComponentTest extends TestCase
 {
-    /** @test */
+    #[Test]
     public function it_has_a_color_by_default(): void
     {
         // Arrange
@@ -24,7 +25,7 @@ final class UndrawBuildYourHomeComponentTest extends TestCase
         $this->assertSame($expectedColor, $color);
     }
 
-    /** @test */
+    #[Test]
     public function it_can_change_the_color(): void
     {
         // Arrange
@@ -39,7 +40,7 @@ final class UndrawBuildYourHomeComponentTest extends TestCase
         $this->assertSame($expectedColor, $color);
     }
 
-    /** @test */
+    #[Test]
     public function it_should_generate_the_view_name_correctly(): void
     {
         // Arrange

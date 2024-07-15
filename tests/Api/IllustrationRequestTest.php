@@ -10,11 +10,12 @@ use GuzzleHttp\Client;
 use GuzzleHttp\Handler\MockHandler;
 use GuzzleHttp\HandlerStack;
 use GuzzleHttp\Psr7\Response;
+use PHPUnit\Framework\Attributes\Test;
 use Psr\Http\Message\ResponseInterface;
 
 final class IllustrationRequestTest extends TestCase
 {
-    /** @test */
+    #[Test]
     public function it_should_return_an_illustration_response_correctly(): void
     {
         // Arrange
