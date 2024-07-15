@@ -6,16 +6,13 @@ namespace BladeComponents\Undraw\Tests\Api;
 
 use BladeComponents\Undraw\Api\Illustration;
 use BladeComponents\Undraw\Tests\TestCase;
+use PHPUnit\Framework\Attributes\DataProvider;
+use PHPUnit\Framework\Attributes\Test;
 
 final class IllustrationTest extends TestCase
 {
-    /**
-     * @test
-     * @dataProvider slugDataProvider
-     *
-     * @param string $title
-     * @param string $expectedSlug
-     */
+    #[Test]
+    #[DataProvider('slugDataProvider')]
     public function it_should_covert_the_title_to_a_slug_correctly(string $title, string $expectedSlug): void
     {
         // Arrange
@@ -37,13 +34,8 @@ final class IllustrationTest extends TestCase
         ];
     }
 
-    /**
-     * @test
-     * @dataProvider snakeDataProvider
-     *
-     * @param string $title
-     * @param string $expectedSnake
-     */
+    #[Test]
+    #[DataProvider('snakeDataProvider')]
     public function it_should_covert_the_title_to_a_snake_correctly(string $title, string $expectedSnake): void
     {
         // Arrange
@@ -65,13 +57,8 @@ final class IllustrationTest extends TestCase
         ];
     }
 
-    /**
-     * @test
-     * @dataProvider studlyDataProvider
-     *
-     * @param string $title
-     * @param string $expectedStudly
-     */
+    #[Test]
+    #[DataProvider('studlyDataProvider')]
     public function it_should_covert_the_title_to_a_studly_correctly(string $title, string $expectedStudly): void
     {
         // Arrange

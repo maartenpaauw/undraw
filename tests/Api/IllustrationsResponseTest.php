@@ -8,10 +8,11 @@ use BladeComponents\Undraw\Api\Illustration;
 use BladeComponents\Undraw\Api\IllustrationsResponse;
 use BladeComponents\Undraw\Tests\TestCase;
 use GuzzleHttp\Psr7\Response;
+use PHPUnit\Framework\Attributes\Test;
 
 final class IllustrationsResponseTest extends TestCase
 {
-    /** @test */
+    #[Test]
     public function it_should_return_the_next_page_correctly(): void
     {
         // Arrange
@@ -26,7 +27,7 @@ final class IllustrationsResponseTest extends TestCase
         $this->assertSame($expectedNextPage, $nextPage);
     }
 
-    /** @test */
+    #[Test]
     public function it_should_return_zero_for_next_page_when_the_status_code_is_not_200(): void
     {
         // Arrange
@@ -46,7 +47,7 @@ final class IllustrationsResponseTest extends TestCase
         $this->assertSame($expectedNextPage, $nextPage);
     }
 
-    /** @test */
+    #[Test]
     public function it_should_return_true_when_there_are_more_pages(): void
     {
         // Arrange
@@ -60,7 +61,7 @@ final class IllustrationsResponseTest extends TestCase
         $this->assertTrue($hasMore);
     }
 
-    /** @test */
+    #[Test]
     public function it_should_return_false_for_has_more_when_the_status_code_is_not_200(): void
     {
         // Arrange
@@ -79,7 +80,7 @@ final class IllustrationsResponseTest extends TestCase
         $this->assertFalse($hasMore);
     }
 
-    /** @test */
+    #[Test]
     public function it_returns_an_empty_array_when_the_status_code_is_not_200(): void
     {
         // Arrange
@@ -98,7 +99,7 @@ final class IllustrationsResponseTest extends TestCase
         $this->assertEmpty($illustrations);
     }
 
-    /** @test */
+    #[Test]
     public function it_returns_an_empty_array_when_there_are_no_illustrations(): void
     {
         // Arrange
@@ -112,7 +113,7 @@ final class IllustrationsResponseTest extends TestCase
         $this->assertEmpty($illustrations);
     }
 
-    /** @test */
+    #[Test]
     public function it_returns_a_list_of_illustrations(): void
     {
         // Arrange

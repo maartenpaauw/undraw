@@ -11,11 +11,12 @@ use GuzzleHttp\Client;
 use GuzzleHttp\Handler\MockHandler;
 use GuzzleHttp\HandlerStack;
 use GuzzleHttp\Psr7\Response;
+use PHPUnit\Framework\Attributes\Test;
 use Psr\Http\Message\ResponseInterface;
 
 final class IllustrationsRequestTest extends TestCase
 {
-    /** @test */
+    #[Test]
     public function it_should_return_a_page_correctly(): void
     {
         // Arrange

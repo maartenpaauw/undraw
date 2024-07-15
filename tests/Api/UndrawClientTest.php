@@ -7,10 +7,11 @@ namespace BladeComponents\Undraw\Tests\Api;
 use BladeComponents\Undraw\Api\UndrawClient;
 use BladeComponents\Undraw\Tests\TestCase;
 use GuzzleHttp\Psr7\Uri;
+use PHPUnit\Framework\Attributes\Test;
 
 final class UndrawClientTest extends TestCase
 {
-    /** @test */
+    #[Test]
     public function it_should_set_the_base_uri_correctly(): void
     {
         // Arrange
